@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    transition: .2s;
+
+}
+
+/* start header section ///////////////////////////////////////////////////////////////////// */
+header {
+
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.945);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 5%;
+}
+
+header div:nth-of-type(3) a {
+    text-decoration: none;
+    margin: 8px;
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 17px;
+}
+
+header div:nth-of-type(3) a:hover {
+    color: white;
+}
+
+header input:nth-of-type(1) {
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+    padding: 1px 10px;
+}
+
+header input:nth-of-type(1):hover {
+    outline: 1px solid rgba(204, 185, 14, 0.918);
+}
+
+header input:nth-of-type(2) {
+    padding: 2px 11px;
+    border-radius: 12px;
+    border: none;
+}
+
+header input:nth-of-type(2):hover {
+    background-color: rgba(0, 0, 0, 0.918);
+    color: white;
+    outline: 1px solid white;
+    cursor: pointer;
+}
+
+header div:nth-of-type(2), header div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header div:nth-of-type(1) {
+    margin-left: 2%;
+}
+
+header div:nth-of-type(1) a {
+    font-size: 17px;
+    color: white;
+    font-weight: normal;
+    margin-left: 4%;
+}
+
+header div:nth-of-type(3) {
+    margin-right: 2%;
+}
+
+/* end header section ///////////////////////////////////////////////////////////////////// */
+
+/* start hero section /////////////////////////////////////////////////////////////////////// */
+main {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.705)), url(../images/10168223_691131144278780_1024275262202437100_n.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    font-family: cursive;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: white;
+}
+
+main p {
+    font-family: cursive;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+main div button {
+    padding: 7px 31px;
+    margin-left: 1rem;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+main div button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* end hero section /////////////////////////////////////////////////////////////////////// */
+
+/* start experience section /////////////////////////////////////////////////////////////////// */
+.experience {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.932), rgba(0, 0, 0, 0.925)), url(../images/face-abook.com_30346003499.jpg) repeat-x center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.experience h2 {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.918);
+    margin-top: 10vh;
+
+}
+
+.experience .exp-ul {
+    width: 90%;
+    height: 85vh;
+}
+
+.experience div {
+    height: 70vh;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.experience ul {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.experience ul p {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.experience ul li {
+    margin: .5rem;
+    font-size: 16px;
+}
+
+/* end experience section /////////////////////////////////////////////////////////////////// */
+
+
+/* start works section /////////////////////////////////////////////////////////////////// */
+.works {
+    height: 100vh;
+    background-color: darkcyan;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.works .works-heading {
+    width: 100%;
+    height: 20vh;
+    /* border: 1px solid darkgoldenrod; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.works .works-heading h3 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+.works .works-heading p {
+    font-size: 17px;
+    text-transform: capitalize;
+    color: white;
+
+}
+
+.works-temp {
+    width: 100%;
+    height: 80vh;
+    background-color: darkcyan;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.works-temp div {
+    background-color: white;
+    min-height: 90%;
+    text-align: center;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.works-temp div:hover {
+    transform: scale(1.02);
+}
+
+.works-temp div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.works-temp div h3 {
+    font-size: 19px;
+}
+
+.works-temp div a {
+    text-decoration: none;
+    color: darkcyan;
+    font-size: 15px;
+}
+
+.works-temp div a:hover {
+    text-decoration: underline;
+}
+
+/* end works section /////////////////////////////////////////////////////////////////// */
+
+/* start footer section //////////////////////////////////////////////////////////////// */
+footer {
+    width: 100%;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.863);
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div {
+    width: 30%;
+    height: 60vh;
+    /* background: darkcyan; */
+    text-align: center;
+}
+
+/* child1-------------------------- */
+footer div:nth-of-type(1) {
+    text-align: center;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer div:nth-of-type(1) h3 {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+footer div:nth-of-type(1) h3::first-letter {
+    font-size: 3.5rem;
+    color: red;
+}
+
+footer div:nth-of-type(1) input {
+    width: 85%;
+    height: 6vh;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 1vh 0;
+}
+
+footer div:nth-of-type(1) form {
+    width: 90%;
+}
+
+footer div:nth-of-type(1) form input:nth-of-type(4) {}
+
+footer div:nth-of-type(1) form input:nth-of-type(4):hover {
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* child2-------------------------- */
+footer div:nth-of-type(2) {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+footer div:nth-of-type(2) h3 {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+footer div:nth-of-type(2) h3::first-letter {
+    font-size: 3.5rem;
+    color: red;
+}
+
+/* footer div:nth-of-type(2) p{
+font-size: 15px;
+letter-spacing: 1px;
+line-height: 15px;
+} */
+.icons-f {
+    height: 40%;
+    width: 80%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icons-f a {
+    text-decoration: none;
+    color: rgb(10, 224, 196);
+    margin: 5px 0;
+    font-weight: bold;
+
+}
+
+.icons-f a:hover {
+    text-decoration: underline;
+}
+
+/* child3-------------- */
+footer div:nth-of-type(3) {
+    /* width: 0%; */
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+footer div:nth-of-type(3) img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+footer div:nth-of-type(3) a:hover {
+    border-radius: 25px;
+
+    transform: scale(1.05);
+}
+
+footer div:nth-of-type(3) div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid; */
+    height: 6rem;
+    width: 92%;
+}
+
+footer div:nth-of-type(3) h3 {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+footer div:nth-of-type(3) h3::first-letter {
+    font-size: 3.5rem;
+    color: red;
+}
+
+/* rights p --------------- */
+.rights {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* end footer section //////////////////////////////////////////////////////////////// */
